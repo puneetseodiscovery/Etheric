@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:orientation="vertical"
+    android:background="@drawable/background_round_rectangle"
+    android:paddingBottom="@dimen/threezero_dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/ten_dp">
+
+        <TextView
+            android:id="@+id/tv_need_sign_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Need Your Signature"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <View android:layout_height="1dp"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/onefive_dp"
+        android:background="@color/black" />
+
+
+    <com.kyanogen.signatureview.SignatureView
+       xmlns:sign="http://schemas.android.com/apk/res-auto"
+       android:id="@+id/signature_view"
+       android:layout_width="match_parent"
+       android:layout_height="150dp"
+       sign:penSize="5dp"
+       sign:backgroundColor="#ffffff"
+        android:layout_margin="@dimen/ten_dp"
+        android:background="@drawable/img_round_rec"
+       sign:penColor="#000000"
+       sign:enableSignature="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/threezero_dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:text="@string/submit_text"
+            android:id="@+id/btn_submit_dialog"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:onClick="onSubmitClicked"
+            android:layout_height="@dimen/fivezero_dp"
+            android:layout_below="@+id/cb_terms_signup"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:layout_marginLeft="@dimen/threetwo_dp"
+            android:layout_marginStart="@dimen/threetwo_dp"
+            android:layout_marginRight="@dimen/threetwo_dp"
+            android:layout_marginEnd="@dimen/threetwo_dp"
+            android:background="@drawable/background_round_rectangle"
+            android:backgroundTint="@color/colorAccent"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

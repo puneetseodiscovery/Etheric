@@ -1,0 +1,1072 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/threetwo_dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_form_fields">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/sign_up_title"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twozero_dp">
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="21sp"
+                    android:textColor="@color/colorAccent"
+                    android:text="@string/fill_details"
+                    android:padding="@dimen/ten_dp"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"/>
+
+                <View android:layout_height="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/onefourzero_dp"
+                    android:layout_marginRight="@dimen/onefourzero_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_below="@+id/tv_title"
+                    android:background="@color/colorAccent"
+                    android:id="@+id/v1"/>
+
+                <View android:layout_height="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/onesixzero_dp"
+                    android:layout_marginRight="@dimen/onesixzero_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_below="@+id/v1"
+                    android:background="@color/colorAccent" />
+            </RelativeLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_mobile"
+                android:hint="@string/mobile_number_text"
+                android:textSize="17sp"
+                android:layout_below="@+id/sign_up_title"
+                android:layout_marginStart="@dimen/threetwo_dp"
+                android:layout_marginLeft="@dimen/threetwo_dp"
+                android:layout_marginTop="@dimen/onefive_dp"
+                android:layout_marginEnd="@dimen/threetwo_dp"
+                android:background="@drawable/background_round_rectangle"
+                android:drawablePadding="@dimen/ten_dp"
+                android:paddingLeft="@dimen/twofive_dp"
+                android:paddingBottom="@dimen/ten_dp"
+                android:paddingTop="@dimen/ten_dp"
+                android:paddingRight="@dimen/ten_dp"
+                android:textCursorDrawable="@null"
+                android:imeOptions="actionNext"
+                android:maxLength="10"
+                android:inputType="phone">
+            </EditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_city"
+                android:hint="@string/city_text"
+                android:textSize="17sp"
+                android:layout_below="@+id/et_mobile"
+                android:layout_marginStart="@dimen/threetwo_dp"
+                android:layout_marginLeft="@dimen/threetwo_dp"
+                android:layout_marginTop="@dimen/onefive_dp"
+                android:layout_marginEnd="@dimen/threetwo_dp"
+                android:background="@drawable/background_round_rectangle"
+                android:drawablePadding="@dimen/ten_dp"
+                android:paddingLeft="@dimen/twofive_dp"
+                android:paddingBottom="@dimen/ten_dp"
+                android:paddingTop="@dimen/ten_dp"
+                android:paddingRight="@dimen/ten_dp"
+                android:textCursorDrawable="@null"
+                android:imeOptions="actionNext"
+                android:textColor="@color/black"
+                android:inputType="text">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_town"
+                android:hint="@string/town_text"
+                android:textSize="17sp"
+                android:layout_below="@+id/et_city"
+                android:layout_marginStart="@dimen/threetwo_dp"
+                android:layout_marginLeft="@dimen/threetwo_dp"
+                android:layout_marginTop="@dimen/onefive_dp"
+                android:layout_marginEnd="@dimen/threetwo_dp"
+                android:textColor="@color/black"
+                android:background="@drawable/background_round_rectangle"
+                android:drawablePadding="@dimen/ten_dp"
+                android:paddingLeft="@dimen/twofive_dp"
+                android:paddingBottom="@dimen/ten_dp"
+                android:paddingTop="@dimen/ten_dp"
+                android:paddingRight="@dimen/ten_dp"
+                android:textCursorDrawable="@null"
+                android:imeOptions="actionNext"
+                android:inputType="text">
+            </TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_industry"
+                android:hint="@string/industry_name_text"
+                android:textSize="17sp"
+                android:layout_below="@+id/et_town"
+                android:layout_marginStart="@dimen/threetwo_dp"
+                android:layout_marginLeft="@dimen/threetwo_dp"
+                android:layout_marginTop="@dimen/onefive_dp"
+                android:layout_marginEnd="@dimen/threetwo_dp"
+                android:background="@drawable/background_round_rectangle"
+                android:drawablePadding="@dimen/ten_dp"
+                android:paddingLeft="@dimen/twofive_dp"
+                android:paddingBottom="@dimen/ten_dp"
+                android:paddingTop="@dimen/ten_dp"
+                android:paddingRight="@dimen/ten_dp"
+                android:textCursorDrawable="@null"
+                android:imeOptions="actionDone"
+                android:inputType="text">
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/block1"
+                android:hint="@string/industry_name_text"
+                android:textSize="17sp"
+                android:layout_below="@+id/et_industry"
+                android:layout_marginStart="@dimen/threetwo_dp"
+                android:layout_marginLeft="@dimen/threetwo_dp"
+                android:layout_marginTop="@dimen/onefive_dp"
+                android:layout_marginEnd="@dimen/threetwo_dp"
+                android:background="@drawable/background_round_rectangle"
+                android:drawablePadding="@dimen/ten_dp"
+                android:paddingLeft="@dimen/twofive_dp"
+                android:paddingBottom="@dimen/ten_dp"
+                android:paddingTop="@dimen/ten_dp"
+                android:paddingRight="@dimen/ten_dp"
+                android:textCursorDrawable="@null"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_ques1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ques1_text"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@+id/btn_signup" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioGroup android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/rg_ques1">
+
+                        <RadioButton
+                            android:id="@+id/cb1_yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="#000000"
+                            android:layout_marginTop="@dimen/ten_dp"
+                            android:layout_marginLeft="@dimen/fivezero_dp"
+                            android:layout_centerInParent="true"
+                            android:maxLines="1"
+                            android:text="@string/yes_text"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:layout_below="@+id/et_cnfrm_password_signup" />
+
+                        <RadioButton
+                            android:id="@+id/cb1_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="#000000"
+                            android:layout_marginTop="@dimen/ten_dp"
+                            android:layout_marginLeft="@dimen/fivezero_dp"
+                            android:layout_centerInParent="true"
+                            android:maxLines="1"
+                            android:text="@string/no_text"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:layout_below="@+id/et_cnfrm_password_signup" />
+
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/block2"
+                android:hint="@string/industry_name_text"
+                android:textSize="17sp"
+                android:layout_below="@+id/block1"
+                android:layout_marginStart="@dimen/threetwo_dp"
+                android:layout_marginLeft="@dimen/threetwo_dp"
+                android:layout_marginTop="@dimen/onefive_dp"
+                android:layout_marginEnd="@dimen/threetwo_dp"
+                android:background="@drawable/background_round_rectangle"
+                android:drawablePadding="@dimen/ten_dp"
+                android:paddingLeft="@dimen/twofive_dp"
+                android:paddingBottom="@dimen/ten_dp"
+                android:paddingTop="@dimen/ten_dp"
+                android:paddingRight="@dimen/ten_dp"
+                android:textCursorDrawable="@null"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_ques2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ques2_text"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@+id/btn_signup" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioGroup android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/rg_ques2">
+
+                        <RadioButton
+                            android:id="@+id/cb2_yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="#000000"
+                            android:layout_marginTop="@dimen/ten_dp"
+                            android:layout_marginLeft="@dimen/fivezero_dp"
+                            android:layout_centerInParent="true"
+                            android:maxLines="1"
+                            android:text="@string/yes_text"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:layout_below="@+id/et_cnfrm_password_signup" />
+
+                        <RadioButton
+                            android:id="@+id/cb2_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="#000000"
+                            android:layout_marginTop="@dimen/ten_dp"
+                            android:layout_marginLeft="@dimen/fivezero_dp"
+                            android:layout_centerInParent="true"
+                            android:maxLines="1"
+                            android:text="@string/no_text"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:layout_below="@+id/et_cnfrm_password_signup" />
+
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/block3"
+                android:hint="@string/industry_name_text"
+                android:textSize="17sp"
+                android:layout_below="@+id/block2"
+                android:layout_marginStart="@dimen/threetwo_dp"
+                android:layout_marginLeft="@dimen/threetwo_dp"
+                android:layout_marginTop="@dimen/onefive_dp"
+                android:layout_marginEnd="@dimen/threetwo_dp"
+                android:background="@drawable/background_round_rectangle"
+                android:drawablePadding="@dimen/ten_dp"
+                android:paddingLeft="@dimen/twofive_dp"
+                android:paddingBottom="@dimen/ten_dp"
+                android:paddingTop="@dimen/ten_dp"
+                android:paddingRight="@dimen/ten_dp"
+                android:textCursorDrawable="@null"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_ques3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ques3_text"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@+id/btn_signup" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioGroup android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/rg_ques3">
+
+                        <RadioButton
+                            android:id="@+id/cb3_yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="#000000"
+                            android:layout_marginTop="@dimen/ten_dp"
+                            android:layout_marginLeft="@dimen/fivezero_dp"
+                            android:layout_centerInParent="true"
+                            android:maxLines="1"
+                            android:text="@string/yes_text"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:layout_below="@+id/et_cnfrm_password_signup" />
+
+                        <RadioButton
+                            android:id="@+id/cb3_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="#000000"
+                            android:layout_marginTop="@dimen/ten_dp"
+                            android:layout_marginLeft="@dimen/fivezero_dp"
+                            android:layout_centerInParent="true"
+                            android:maxLines="1"
+                            android:text="@string/no_text"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:layout_below="@+id/et_cnfrm_password_signup" />
+
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/block4"
+                android:hint="@string/industry_name_text"
+                android:textSize="17sp"
+                android:layout_below="@+id/block3"
+                android:layout_marginStart="@dimen/threetwo_dp"
+                android:layout_marginLeft="@dimen/threetwo_dp"
+                android:layout_marginTop="@dimen/onefive_dp"
+                android:layout_marginEnd="@dimen/threetwo_dp"
+                android:background="@drawable/background_round_rectangle"
+                android:drawablePadding="@dimen/ten_dp"
+                android:paddingLeft="@dimen/twofive_dp"
+                android:paddingBottom="@dimen/ten_dp"
+                android:paddingTop="@dimen/ten_dp"
+                android:paddingRight="@dimen/ten_dp"
+                android:textCursorDrawable="@null"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_ques4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ques4_text"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@+id/btn_signup" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioGroup android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/rg_ques4">
+
+                        <RadioButton
+                            android:id="@+id/cb4_yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="#000000"
+                            android:layout_marginTop="@dimen/ten_dp"
+                            android:layout_marginLeft="@dimen/fivezero_dp"
+                            android:layout_centerInParent="true"
+                            android:maxLines="1"
+                            android:text="@string/yes_text"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:layout_below="@+id/et_cnfrm_password_signup" />
+
+                        <RadioButton
+                            android:id="@+id/cb4_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="#000000"
+                            android:layout_marginTop="@dimen/ten_dp"
+                            android:layout_marginLeft="@dimen/fivezero_dp"
+                            android:layout_centerInParent="true"
+                            android:maxLines="1"
+                            android:text="@string/no_text"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:layout_below="@+id/et_cnfrm_password_signup" />
+
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/block5"
+                android:hint="@string/industry_name_text"
+                android:textSize="17sp"
+                android:layout_below="@+id/block4"
+                android:layout_marginStart="@dimen/threetwo_dp"
+                android:layout_marginLeft="@dimen/threetwo_dp"
+                android:layout_marginTop="@dimen/onefive_dp"
+                android:layout_marginEnd="@dimen/threetwo_dp"
+                android:background="@drawable/background_round_rectangle"
+                android:drawablePadding="@dimen/ten_dp"
+                android:paddingLeft="@dimen/twofive_dp"
+                android:paddingBottom="@dimen/ten_dp"
+                android:paddingTop="@dimen/ten_dp"
+                android:paddingRight="@dimen/ten_dp"
+                android:textCursorDrawable="@null"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_ques5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ques5_text"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@+id/btn_signup" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioGroup android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/rg_ques5">
+
+                        <RadioButton
+                            android:id="@+id/cb5_yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="#000000"
+                            android:layout_marginTop="@dimen/ten_dp"
+                            android:layout_marginLeft="@dimen/fivezero_dp"
+                            android:layout_centerInParent="true"
+                            android:maxLines="1"
+                            android:text="@string/yes_text"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:layout_below="@+id/et_cnfrm_password_signup" />
+
+                        <RadioButton
+                            android:id="@+id/cb5_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="#000000"
+                            android:layout_marginTop="@dimen/ten_dp"
+                            android:layout_marginLeft="@dimen/fivezero_dp"
+                            android:layout_centerInParent="true"
+                            android:maxLines="1"
+                            android:text="@string/no_text"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:layout_below="@+id/et_cnfrm_password_signup" />
+
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/block6"
+                android:hint="@string/industry_name_text"
+                android:textSize="17sp"
+                android:layout_below="@+id/block5"
+                android:layout_marginStart="@dimen/threetwo_dp"
+                android:layout_marginLeft="@dimen/threetwo_dp"
+                android:layout_marginTop="@dimen/onefive_dp"
+                android:layout_marginEnd="@dimen/threetwo_dp"
+                android:background="@drawable/background_round_rectangle"
+                android:drawablePadding="@dimen/ten_dp"
+                android:paddingLeft="@dimen/twofive_dp"
+                android:paddingBottom="@dimen/ten_dp"
+                android:paddingTop="@dimen/ten_dp"
+                android:paddingRight="@dimen/ten_dp"
+                android:textCursorDrawable="@null"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_ques6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ques6_text"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@+id/btn_signup" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioGroup android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/rg_ques6">
+
+                        <RadioButton
+                            android:id="@+id/cb6_yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="#000000"
+                            android:layout_marginTop="@dimen/ten_dp"
+                            android:layout_marginLeft="@dimen/fivezero_dp"
+                            android:layout_centerInParent="true"
+                            android:maxLines="1"
+                            android:text="@string/yes_text"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:layout_below="@+id/et_cnfrm_password_signup" />
+
+                        <RadioButton
+                            android:id="@+id/cb6_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="#000000"
+                            android:layout_marginTop="@dimen/ten_dp"
+                            android:layout_marginLeft="@dimen/fivezero_dp"
+                            android:layout_centerInParent="true"
+                            android:maxLines="1"
+                            android:text="@string/no_text"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:layout_below="@+id/et_cnfrm_password_signup" />
+
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/block7"
+                android:hint="@string/industry_name_text"
+                android:textSize="17sp"
+                android:layout_below="@+id/block6"
+                android:layout_marginStart="@dimen/threetwo_dp"
+                android:layout_marginLeft="@dimen/threetwo_dp"
+                android:layout_marginTop="@dimen/onefive_dp"
+                android:layout_marginEnd="@dimen/threetwo_dp"
+                android:background="@drawable/background_round_rectangle"
+                android:drawablePadding="@dimen/ten_dp"
+                android:paddingLeft="@dimen/twofive_dp"
+                android:paddingBottom="@dimen/ten_dp"
+                android:paddingTop="@dimen/ten_dp"
+                android:paddingRight="@dimen/ten_dp"
+                android:textCursorDrawable="@null"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_ques7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ques7_text"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@+id/btn_signup" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioGroup android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/rg_ques7">
+
+                        <RadioButton
+                            android:id="@+id/cb7_yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="#000000"
+                            android:layout_marginTop="@dimen/ten_dp"
+                            android:layout_marginLeft="@dimen/fivezero_dp"
+                            android:layout_centerInParent="true"
+                            android:maxLines="1"
+                            android:text="@string/yes_text"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:layout_below="@+id/et_cnfrm_password_signup" />
+
+                        <RadioButton
+                            android:id="@+id/cb7_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="#000000"
+                            android:layout_marginTop="@dimen/ten_dp"
+                            android:layout_marginLeft="@dimen/fivezero_dp"
+                            android:layout_centerInParent="true"
+                            android:maxLines="1"
+                            android:text="@string/no_text"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:layout_below="@+id/et_cnfrm_password_signup" />
+
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/block8"
+                android:hint="@string/industry_name_text"
+                android:textSize="17sp"
+                android:layout_below="@+id/block7"
+                android:layout_marginStart="@dimen/threetwo_dp"
+                android:layout_marginLeft="@dimen/threetwo_dp"
+                android:layout_marginTop="@dimen/onefive_dp"
+                android:layout_marginEnd="@dimen/threetwo_dp"
+                android:background="@drawable/background_round_rectangle"
+                android:drawablePadding="@dimen/ten_dp"
+                android:paddingLeft="@dimen/twofive_dp"
+                android:paddingBottom="@dimen/ten_dp"
+                android:paddingTop="@dimen/ten_dp"
+                android:paddingRight="@dimen/ten_dp"
+                android:textCursorDrawable="@null"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_ques8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ques8_text"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@+id/btn_signup" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioGroup android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/rg_ques8">
+
+                        <RadioButton
+                            android:id="@+id/cb8_yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="#000000"
+                            android:layout_marginTop="@dimen/ten_dp"
+                            android:layout_marginLeft="@dimen/fivezero_dp"
+                            android:layout_centerInParent="true"
+                            android:maxLines="1"
+                            android:text="@string/yes_text"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:layout_below="@+id/et_cnfrm_password_signup" />
+
+                        <RadioButton
+                            android:id="@+id/cb8_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="#000000"
+                            android:layout_marginTop="@dimen/ten_dp"
+                            android:layout_marginLeft="@dimen/fivezero_dp"
+                            android:layout_centerInParent="true"
+                            android:maxLines="1"
+                            android:text="@string/no_text"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:layout_below="@+id/et_cnfrm_password_signup" />
+
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/block9"
+                android:hint="@string/industry_name_text"
+                android:textSize="17sp"
+                android:layout_below="@+id/block8"
+                android:layout_marginStart="@dimen/threetwo_dp"
+                android:layout_marginLeft="@dimen/threetwo_dp"
+                android:layout_marginTop="@dimen/onefive_dp"
+                android:layout_marginEnd="@dimen/threetwo_dp"
+                android:background="@drawable/background_round_rectangle"
+                android:drawablePadding="@dimen/ten_dp"
+                android:paddingLeft="@dimen/twofive_dp"
+                android:paddingBottom="@dimen/ten_dp"
+                android:paddingTop="@dimen/ten_dp"
+                android:paddingRight="@dimen/ten_dp"
+                android:textCursorDrawable="@null"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_ques9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ques9_text"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@+id/btn_signup" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioGroup android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/rg_ques9">
+
+                        <RadioButton
+                            android:id="@+id/cb9_yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="#000000"
+                            android:layout_marginTop="@dimen/ten_dp"
+                            android:layout_marginLeft="@dimen/fivezero_dp"
+                            android:layout_centerInParent="true"
+                            android:maxLines="1"
+                            android:text="@string/yes_text"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:layout_below="@+id/et_cnfrm_password_signup" />
+
+                        <RadioButton
+                            android:id="@+id/cb9_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="#000000"
+                            android:layout_marginTop="@dimen/ten_dp"
+                            android:layout_marginLeft="@dimen/fivezero_dp"
+                            android:layout_centerInParent="true"
+                            android:maxLines="1"
+                            android:text="@string/no_text"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:layout_below="@+id/et_cnfrm_password_signup" />
+
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/block10"
+                android:hint="@string/industry_name_text"
+                android:textSize="17sp"
+                android:layout_below="@+id/block9"
+                android:layout_marginStart="@dimen/threetwo_dp"
+                android:layout_marginLeft="@dimen/threetwo_dp"
+                android:layout_marginTop="@dimen/onefive_dp"
+                android:layout_marginEnd="@dimen/threetwo_dp"
+                android:background="@drawable/background_round_rectangle"
+                android:drawablePadding="@dimen/ten_dp"
+                android:paddingLeft="@dimen/twofive_dp"
+                android:paddingBottom="@dimen/ten_dp"
+                android:paddingTop="@dimen/ten_dp"
+                android:paddingRight="@dimen/ten_dp"
+                android:textCursorDrawable="@null"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_ques10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ques10_text"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@+id/btn_signup" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioGroup android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/rg_ques10">
+
+                        <RadioButton
+                            android:id="@+id/cb10_yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="#000000"
+                            android:layout_marginTop="@dimen/ten_dp"
+                            android:layout_marginLeft="@dimen/fivezero_dp"
+                            android:layout_centerInParent="true"
+                            android:maxLines="1"
+                            android:text="@string/yes_text"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:layout_below="@+id/et_cnfrm_password_signup" />
+
+                        <RadioButton
+                            android:id="@+id/cb10_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="#000000"
+                            android:layout_marginTop="@dimen/ten_dp"
+                            android:layout_marginLeft="@dimen/fivezero_dp"
+                            android:layout_centerInParent="true"
+                            android:maxLines="1"
+                            android:text="@string/no_text"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:layout_below="@+id/et_cnfrm_password_signup" />
+
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/block11"
+                android:textSize="17sp"
+                android:layout_below="@+id/block7"
+                android:layout_marginStart="@dimen/threetwo_dp"
+                android:layout_marginLeft="@dimen/threetwo_dp"
+                android:layout_marginTop="@dimen/onefive_dp"
+                android:layout_marginEnd="@dimen/threetwo_dp"
+                android:background="@drawable/background_round_rectangle"
+                android:drawablePadding="@dimen/ten_dp"
+                android:paddingLeft="@dimen/twofive_dp"
+                android:paddingBottom="@dimen/ten_dp"
+                android:paddingTop="@dimen/ten_dp"
+                android:paddingRight="@dimen/ten_dp"
+                android:textCursorDrawable="@null"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/upload_photo_text"
+                    android:textColor="#000000"
+                    android:textSize="21sp"
+                    android:id="@+id/upload_img_text" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/upload_photo_text"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:layout_below="@+id/upload_img_text"
+                    android:background="@drawable/background_round_rectangle"
+                    android:padding="@dimen/ten_dp"
+                    android:id="@+id/btn_upload_img"
+                    android:onClick="onUploadPhotoClicked"
+                    android:layout_marginTop="@dimen/ten_dp"/>
+
+                <!--<ImageView
+                    android:id="@+id/img_ques11"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/userdefault"
+                    android:background="@drawable/img_round_rec"
+                    android:layout_alignParentRight="true" />-->
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_margin="@dimen/onefive_dp"
+                    android:elevation="10dp"
+                    android:layout_alignParentRight="true">
+
+                    <ImageView
+                        android:id="@+id/img_ques11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        />
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/block12"
+                android:textSize="17sp"
+                android:layout_below="@+id/block11"
+                android:layout_marginStart="@dimen/threetwo_dp"
+                android:layout_marginLeft="@dimen/threetwo_dp"
+                android:layout_marginTop="@dimen/onefive_dp"
+                android:layout_marginEnd="@dimen/threetwo_dp"
+                android:background="@drawable/background_round_rectangle"
+                android:drawablePadding="@dimen/ten_dp"
+                android:paddingLeft="@dimen/twofive_dp"
+                android:paddingBottom="@dimen/ten_dp"
+                android:paddingTop="@dimen/ten_dp"
+                android:paddingRight="@dimen/ten_dp"
+                android:textCursorDrawable="@null"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/signature_text"
+                    android:textColor="#000000"
+                    android:textSize="21sp"
+                    android:onClick="onSignUpButtonClicked"
+                    android:id="@+id/signature_text" />
+
+                <!--<LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:text="@string/upload_photo_text"
+                    android:textColor="#000000"
+                    android:textSize="13sp"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/ic_launcher_round"
+                    android:onClick="onSignatureClicked"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/background_round_rect_transparent"
+                    android:orientation="horizontal">
+
+                    &lt;!&ndash;<com.kyanogen.signatureview.SignatureView
+                        xmlns:sign="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/signature_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        sign:penSize="5dp"
+                        sign:backgroundColor="#ffffff"
+                        sign:penColor="#000000"
+                        sign:enableSignature="true"/>&ndash;&gt;
+
+                </LinearLayout>
+-->
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_margin="@dimen/onefive_dp"
+                    android:elevation="10dp"
+                    android:layout_alignParentRight="true"
+                    android:onClick="onSignatureClicked">
+
+                    <ImageView
+                        android:id="@+id/img_ques12"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+            <CheckBox
+                android:id="@+id/cb_terms_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="#000000"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:layout_marginLeft="@dimen/fivezero_dp"
+                android:layout_centerInParent="true"
+                android:maxLines="1"
+                android:text="@string/terms_cond_text"
+                android:textColor="#000000"
+                android:textSize="13sp"
+                android:layout_below="@+id/block12" />
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:text="@string/submit_text"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:onClick="onSubmitClicked"
+                android:layout_height="@dimen/fivezero_dp"
+                android:layout_below="@+id/cb_terms_signup"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:layout_marginLeft="@dimen/threetwo_dp"
+                android:layout_marginStart="@dimen/threetwo_dp"
+                android:layout_marginRight="@dimen/threetwo_dp"
+                android:layout_marginEnd="@dimen/threetwo_dp"
+                android:background="@drawable/background_round_rectangle"
+                android:backgroundTint="@color/colorAccent"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

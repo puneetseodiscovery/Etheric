@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Etheric</string>
+
+
+    <string name="fill_details">FILL YOUR DETAILS</string>
+    <string name="mobile_number_text">Mobile Number</string>
+    <string name="city_text">City</string>
+    <string name="town_text">Town</string>
+    <string name="industry_name_text">Industry Name</string>
+    <string name="ques1_text">1. Interested in taking consultancy of relocation policy , incentives or any other like power, transport etc of Haryana industries department support?</string>
+    <string name="ques2_text">2. Want help in promotion of your product upto global level?</string>
+    <string name="ques3_text">3. Do you think your raw material can be procure on much cheap rates?</string>
+    <string name="ques4_text">4. Interested in computer hardware ,software, printer etc on lease model?</string>
+    <string name="ques5_text">5. Safety/fire safety equipments in unit ? </string>
+    <string name="ques6_text">6. Need professional for industry management,insurance,banking, finance, accounting, legal , GST etc for unit?</string>
+    <string name="ques7_text">7. Need help in treatment of bio organic waste material ?</string>
+    <string name="ques8_text">8. Do you want to deal with industry management, insurance, banking, finance, accounting, legal counseling?</string>
+    <string name="ques9_text">9. Do you want to consult about industry sector, power / electricity, transport industry machinery related to industry management?</string>
+    <string name="ques10_text">10. Do you want to use or do any kind of product or to seek advice to fix your factory / industry\'s western material?</string>
+    <string name="yes_text">Yes</string>
+    <string name="no_text">No</string>
+    <string name="upload_photo_text">Upload Photo</string>
+    <string name="signature_text">Signature</string>
+    <string name="terms_cond_text">I agree all the terms of service</string>
+    <string name="submit_text">Submit</string>
+    <string name="exit">Please click back again to exit</string>
+</resources>

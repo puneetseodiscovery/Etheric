@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/block11"
+            android:textSize="17sp"
+            android:layout_below="@+id/block10"
+            android:layout_marginStart="@dimen/threetwo_dp"
+            android:layout_marginLeft="@dimen/threetwo_dp"
+            android:layout_marginTop="@dimen/onefive_dp"
+            android:layout_marginEnd="@dimen/threetwo_dp"
+            android:background="@drawable/background_round_rectangle"
+            android:drawablePadding="@dimen/ten_dp"
+            android:paddingLeft="@dimen/twofive_dp"
+            android:paddingBottom="@dimen/ten_dp"
+            android:paddingTop="@dimen/ten_dp"
+            android:paddingRight="@dimen/ten_dp"
+            android:textCursorDrawable="@null"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/upload_photo_text"
+                android:textColor="#000000"
+                android:textSize="21sp"
+                android:onClick="onSignUpButtonClicked"
+                android:id="@+id/upload_img_text" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/upload_photo_text"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:onClick="onSignUpButtonClicked"
+                android:layout_below="@+id/upload_img_text"
+                android:background="@drawable/background_round_rectangle"
+                android:padding="@dimen/ten_dp"
+                android:id="@+id/btn_upload_img"
+                android:layout_marginTop="@dimen/ten_dp"/>
+
+            <LinearLayout
+                android:id="@+id/tv_ques11"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text="@string/upload_photo_text"
+                android:textColor="#000000"
+                android:textSize="13sp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/ic_launcher_round"
+                android:onClick="onSignUpButtonClicked"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/background_round_rect_transparent"
+                android:orientation="horizontal"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
